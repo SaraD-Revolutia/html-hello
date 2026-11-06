@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f5f0" />
+    <meta name="description" content="Review your Form & Field shopping bag, check item quantities and see your order total including 20% VAT before continuing to checkout." />
+    <title>Your Bag &amp; Order Summary | Form &amp; Field</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              paper: '#f6f5f0',
+              ink: '#242923',
+              muted: '#62665e',
+              line: '#dedfd7',
+              olive: '#65705a',
+              clay: '#b76d4b'
+            },
+            fontFamily: {
+              sans: ['DM Sans', 'sans-serif'],
+              serif: ['Playfair Display', 'Georgia', 'serif']
+            }
+          }
+        }
+      };
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Form & Field",
+        "url": "https://formandfield.example/",
+        "logo": "https://formandfield.example/logo.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "email": "hello@formandfield.example",
+          "availableLanguage": ["English", "French"]
+        }
+      }
+    </script>
+  </head>
+  <body class="m-0 bg-paper font-sans text-ink antialiased">
+    <a href="#main" class="sr-only z-50 bg-ink px-4 py-3 text-white focus:not-sr-only focus:absolute focus:left-4 focus:top-4">Skip to content</a>
+    <header class="relative z-20 bg-paper">
+      <p class="flex min-h-8 items-center justify-center bg-olive px-4 py-2 text-center text-[9px] uppercase tracking-normal text-white sm:text-[10px]">Complimentary shipping on orders over EUR 100</p>
+      <nav aria-label="Main navigation" class="relative mx-auto grid max-w-[1440px] grid-cols-[1fr_auto_1fr] items-center gap-x-2 px-4 sm:px-8 lg:gap-x-6 lg:px-[5.2%]">
+        <details class="py-4 lg:hidden">
+          <summary class="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-sm hover:text-clay focus-visible:outline focus-visible:outline-2 focus-visible:outline-olive [&::-webkit-details-marker]:hidden" aria-label="Navigation menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </summary>
+          <div class="absolute inset-x-0 top-[76px] border-y border-line bg-paper px-6 py-4 shadow-sm">
+            <ul class="divide-y divide-line text-sm">
+              <li><a href="catalog.html" class="block py-3 hover:text-clay">Shop</a></li>
+              <li><a href="product.html" class="block py-3 hover:text-clay">Our edit</a></li>
+              <li><a href="checkout.html" class="block py-3 hover:text-clay">Checkout</a></li>
+            </ul>
+          </div>
+        </details>
+        <ul class="hidden items-center gap-6 py-7 text-xs lg:flex">
+          <li><a href="catalog.html" class="hover:text-clay">Shop</a></li>
+          <li><a href="product.html" class="hover:text-clay">Our edit</a></li>
+          <li><a href="checkout.html" class="hover:text-clay">Checkout</a></li>
+        </ul>
+        <a href="index.html" aria-label="Form and Field home" class="whitespace-nowrap text-center text-base font-bold sm:text-lg">FORM <span class="font-serif text-xl font-medium text-olive">&amp;</span> FIELD</a>
+        <div class="flex items-center justify-end gap-0 sm:gap-2">
+          <a href="account.html" aria-label="My account" title="My account" class="flex h-11 w-9 items-center justify-center hover:text-clay sm:w-11">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a7 7 0 0 0-14 0v2" /><circle cx="13" cy="7" r="4" /></svg>
+          </a>
+          <a href="cart.html" aria-current="page" aria-label="Shopping bag, 0 items" title="Shopping bag" class="flex h-11 items-center justify-center gap-1 px-1 text-xs hover:text-clay sm:px-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 3-3 4v14h18V7l-3-4ZM3 7h18M16 11a4 4 0 0 1-8 0" /></svg>
+            <span aria-hidden="true">(0)</span>
+          </a>
+        </div>
+        <form role="search" action="catalog.html" method="get" class="col-span-3 mb-4 flex min-w-0 items-center border-b border-line md:mx-auto md:w-80 lg:w-96">
+          <label for="search" class="sr-only">Search clothing, footwear and accessories</label>
+          <input id="search" name="q" type="text" placeholder="Find your everyday essentials" class="min-w-0 flex-1 bg-transparent px-2 py-3 text-xs placeholder:text-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-olive" />
+          <button type="submit" aria-label="Search" title="Search" class="flex h-11 w-11 shrink-0 items-center justify-center hover:text-clay focus-visible:outline focus-visible:outline-2 focus-visible:outline-olive">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></svg>
+          </button>
+        </form>
+      </nav>
+    </header>
+
+    <main id="main" class="mx-auto max-w-[1440px] px-4 py-12 sm:px-8 sm:py-16 lg:px-[5.2%] lg:py-20">
+      <section aria-labelledby="bag-title">
+        <div class="mb-8 flex flex-wrap items-end justify-between gap-5 sm:mb-12">
+          <div>
+            <p class="mb-3 text-[10px] font-semibold uppercase text-muted">Your everyday edit</p>
+            <h1 id="bag-title" class="font-serif text-4xl font-medium sm:text-5xl">Your bag</h1>
+            <p class="mt-4 text-sm text-muted">3 styles, 4 pieces. All item prices exclude VAT.</p>
+          </div>
+          <a href="catalog.html" class="border-b border-ink pb-1 text-xs hover:text-clay">Continue shopping <span aria-hidden="true">&#8594;</span></a>
+        </div>
+        <form action="checkout.html" method="get">
+          <div class="grid gap-10 lg:grid-cols-[minmax(0,1.75fr)_minmax(0,1fr)] lg:gap-12">
+            <fieldset class="min-w-0">
+              <legend class="mb-5 text-sm font-medium">Items in your bag</legend>
+              <ol class="divide-y divide-line border-y border-line">
+                <li class="py-6">
+                  <article aria-labelledby="shirt-name" class="grid grid-cols-[80px_minmax(0,1fr)] gap-4 sm:grid-cols-[112px_minmax(0,1fr)] sm:gap-6">
+                    <a href="product.html" aria-label="View The Cotton Shirt" class="block aspect-[4/5] overflow-hidden bg-line"><img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&amp;fit=crop&amp;w=400&amp;q=82" alt="White cotton shirt with long sleeves and a pointed collar" width="400" height="500" class="h-full w-full object-cover" /></a>
+                    <div class="min-w-0">
+                      <h2 id="shirt-name" class="text-sm font-medium"><a href="product.html" class="hover:text-clay">The Cotton Shirt</a></h2>
+                      <p class="mt-1 text-xs leading-6 text-muted">Soft white cotton · Size M</p>
+                      <p class="mt-1 text-xs">Unit price: <data value="96.00">EUR 96.00</data></p>
+                      <div class="mt-4 flex flex-wrap items-end justify-between gap-4">
+                        <div><label for="shirt-quantity" class="mb-2 block text-xs font-medium">Quantity <span class="sr-only">for The Cotton Shirt</span></label><input id="shirt-quantity" name="shirt-quantity" type="number" min="1" max="10" step="1" value="1" required class="min-h-11 w-20 rounded-none border border-line bg-paper px-3 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-olive" /></div>
+                        <p class="text-xs leading-6"><span class="block text-muted">Line total</span><data value="96.00" class="font-medium">EUR 96.00</data></p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="py-6">
+                  <article aria-labelledby="tee-name" class="grid grid-cols-[80px_minmax(0,1fr)] gap-4 sm:grid-cols-[112px_minmax(0,1fr)] sm:gap-6">
+                    <a href="product.html" aria-label="View The Sunday Tee" class="block aspect-[4/5] overflow-hidden bg-line"><img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&amp;fit=crop&amp;w=400&amp;q=82" alt="Black short-sleeve cotton T-shirt on a wooden hanger" width="400" height="500" class="h-full w-full object-cover" /></a>
+                    <div class="min-w-0">
+                      <h2 id="tee-name" class="text-sm font-medium"><a href="product.html" class="hover:text-clay">The Sunday Tee</a></h2>
+                      <p class="mt-1 text-xs leading-6 text-muted">Black cotton · Size L</p>
+                      <p class="mt-1 text-xs">Unit price: <data value="44.00">EUR 44.00</data></p>
+                      <div class="mt-4 flex flex-wrap items-end justify-between gap-4">
+                        <div><label for="tee-quantity" class="mb-2 block text-xs font-medium">Quantity <span class="sr-only">for The Sunday Tee</span></label><input id="tee-quantity" name="tee-quantity" type="number" min="1" max="10" step="1" value="2" required class="min-h-11 w-20 rounded-none border border-line bg-paper px-3 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-olive" /></div>
+                        <p class="text-xs leading-6"><span class="block text-muted">Line total</span><data value="88.00" class="font-medium">EUR 88.00</data></p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="py-6">
+                  <article aria-labelledby="carryall-name" class="grid grid-cols-[80px_minmax(0,1fr)] gap-4 sm:grid-cols-[112px_minmax(0,1fr)] sm:gap-6">
+                    <a href="product.html" aria-label="View The Daily Carryall" class="block aspect-[4/5] overflow-hidden bg-line"><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&amp;fit=crop&amp;w=400&amp;q=82" alt="Natural canvas carryall bag with two long shoulder straps" width="400" height="500" class="h-full w-full object-cover" /></a>
+                    <div class="min-w-0">
+                      <h2 id="carryall-name" class="text-sm font-medium"><a href="product.html" class="hover:text-clay">The Daily Carryall</a></h2>
+                      <p class="mt-1 text-xs leading-6 text-muted">Natural canvas · Size One size</p>
+                      <p class="mt-1 text-xs">Unit price: <data value="72.00">EUR 72.00</data></p>
+                      <div class="mt-4 flex flex-wrap items-end justify-between gap-4">
+                        <div><label for="carryall-quantity" class="mb-2 block text-xs font-medium">Quantity <span class="sr-only">for The Daily Carryall</span></label><input id="carryall-quantity" name="carryall-quantity" type="number" min="1" max="10" step="1" value="1" required class="min-h-11 w-20 rounded-none border border-line bg-paper px-3 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-olive" /></div>
+                        <p class="text-xs leading-6"><span class="block text-muted">Line total</span><data value="72.00" class="font-medium">EUR 72.00</data></p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+              </ol>
+            </fieldset>
+            <section aria-labelledby="summary-title" class="min-w-0 border-t border-line pt-6 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0">
+              <h2 id="summary-title" class="font-serif text-2xl font-medium sm:text-3xl">Order summary</h2>
+              <dl class="mt-6 space-y-4 text-sm">
+                <div class="flex justify-between gap-4"><dt class="text-muted">Subtotal</dt><dd><data value="256.00">EUR 256.00</data></dd></div>
+                <div class="flex justify-between gap-4"><dt class="text-muted">VAT (20%)</dt><dd><data value="51.20">EUR 51.20</data></dd></div>
+                <div class="flex justify-between gap-4"><dt class="text-muted">Shipping</dt><dd>Complimentary</dd></div>
+                <div class="flex justify-between gap-4 border-t border-line pt-5 text-base font-semibold"><dt>Total</dt><dd><data value="307.20">EUR 307.20</data></dd></div>
+              </dl>
+              <button type="submit" class="mt-8 flex min-h-12 w-full items-center justify-center gap-3 bg-ink px-5 text-xs font-semibold text-white hover:bg-olive focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-olive">Purchase <span aria-hidden="true">&#8594;</span></button>
+              <p class="mt-4 text-xs leading-6 text-muted">Your order qualifies for complimentary shipping. Review your delivery and payment details at checkout.</p>
+            </section>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer" class="bg-[#eaeae3]">
+      <div class="mx-auto max-w-[1440px] px-5 py-12 sm:px-8 lg:px-[5.2%] lg:py-16">
+        <a href="index.html" class="inline-block text-lg font-bold">FORM <span class="font-serif text-xl font-medium text-olive">&amp;</span> FIELD</a>
+        <p class="mt-3 max-w-xs text-xs leading-6 text-muted">Thoughtful things for the everyday. Made with care, chosen to last.</p>
+        <div class="mt-10 grid grid-cols-2 gap-x-6 gap-y-8 md:grid-cols-3 lg:gap-x-16">
+          <div>
+            <h2 class="mb-4 text-[10px] font-semibold uppercase">Categories</h2>
+            <ul class="space-y-3 text-xs text-muted">
+              <li><a href="catalog.html" class="hover:text-clay">Footwear</a></li>
+              <li><a href="catalog.html" class="hover:text-clay">Shirts</a></li>
+              <li><a href="catalog.html" class="hover:text-clay">Pants</a></li>
+              <li><a href="catalog.html" class="hover:text-clay">Accessories</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-4 text-[10px] font-semibold uppercase">Legal</h2>
+            <ul class="space-y-3 text-xs text-muted">
+              <li><a href="terms.html" class="hover:text-clay">Terms and conditions</a></li>
+              <li><a href="privacy.html" class="hover:text-clay">Privacy policy</a></li>
+              <li><a href="about.html" class="hover:text-clay">About the brand</a></li>
+            </ul>
+          </div>
+          <div class="col-span-2 md:col-span-1">
+            <h2 class="mb-4 text-[10px] font-semibold uppercase">Contact</h2>
+            <address class="text-xs not-italic leading-6 text-muted">
+              <a href="mailto:hello@formandfield.example" class="break-words hover:text-clay">hello@formandfield.example</a>
+              <p class="mt-3">24 Rue du Sentier<br />75002 Paris, France</p>
+            </address>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto flex max-w-[1440px] flex-wrap justify-between gap-3 border-t border-[#d5d6cd] px-5 py-5 text-[10px] text-muted sm:px-8 lg:px-[5.2%]">
+        <p>&copy; 2025 Form &amp; Field</p>
+        <p>Everyday, considered.</p>
+      </div>
+    </footer>
+  </body>
+</html>
