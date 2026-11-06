@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f5f0" />
+    <meta name="description" content="Thoughtful everyday objects, made to be lived in." />
+    <title>Form & Field — Everyday, considered</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="site.js" defer></script>
+  </head>
+  <body>
+    <site-header></site-header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero__image" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=2200&q=85" alt="A considered edit of timeless clothing in natural tones" />
+        <div class="hero__content">
+          <p class="eyebrow">A slower kind of everyday</p>
+          <h1 id="hero-title">Made for the<br />in-between.</h1>
+          <p class="hero__copy">Good things to wear, use, and keep close. Designed with intention, made for real life.</p>
+          <a class="button button--dark" href="#new-arrivals">Shop the collection <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="hero__note">The early summer collection · 01 / 03</p>
+      </section>
+
+      <section class="product-section" id="new-arrivals" aria-labelledby="new-arrivals-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Just found its way here</p>
+            <h2 id="new-arrivals-title">New arrivals</h2>
+          </div>
+          <a class="text-link" href="#new-arrivals">Explore all <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="product-grid">
+          <article class="product">
+            <a class="product__image" href="#new-arrivals" aria-label="View The Everyday Tote">
+              <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=82" alt="Natural canvas everyday tote bag" loading="lazy" />
+              <span class="product__tag">New</span>
+            </a>
+            <div class="product__details"><div><h3>The Everyday Tote</h3><p>Natural canvas · 2 colors</p></div><span class="product__price">$48</span></div>
+          </article>
+          <article class="product">
+            <a class="product__image" href="#new-arrivals" aria-label="View the Linen Weekend Shirt">
+              <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=900&q=82" alt="Relaxed ivory linen shirt" loading="lazy" />
+              <span class="product__tag">New</span>
+            </a>
+            <div class="product__details"><div><h3>Linen Weekend Shirt</h3><p>Soft white · XS–XL</p></div><span class="product__price">$96</span></div>
+          </article>
+          <article class="product">
+            <a class="product__image" href="#new-arrivals" aria-label="View the Sculpted Ceramic Cup">
+              <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=900&q=82" alt="Hand-finished ceramic cup on a table" loading="lazy" />
+              <span class="product__tag">New</span>
+            </a>
+            <div class="product__details"><div><h3>Sculpted Ceramic Cup</h3><p>Oat glaze · Set of 2</p></div><span class="product__price">$42</span></div>
+          </article>
+          <article class="product">
+            <a class="product__image" href="#new-arrivals" aria-label="View the Everyday Leather Sandal">
+              <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=900&q=82" alt="Minimal leather sandals in a warm neutral shade" loading="lazy" />
+              <span class="product__tag">New</span>
+            </a>
+            <div class="product__details"><div><h3>Everyday Leather Sandal</h3><p>Chestnut · Sizes 5–11</p></div><span class="product__price">$118</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="editorial" aria-label="Our approach">
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1600&q=85" alt="Thoughtfully arranged clothes in a sunlit studio" loading="lazy" />
+        <div class="editorial__content">
+          <p class="eyebrow">Less, but better</p>
+          <h2>Objects with a<br />life beyond the season.</h2>
+          <a class="text-link" href="#best-sellers">Find your forever pieces <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <section class="product-section product-section--last" id="best-sellers" aria-labelledby="best-sellers-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">The ones you come back to</p>
+            <h2 id="best-sellers-title">Best sellers</h2>
+          </div>
+          <a class="text-link" href="#best-sellers">Shop best sellers <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="product-grid">
+          <article class="product">
+            <a class="product__image" href="#best-sellers" aria-label="View the Daily Carryall">
+              <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=900&q=82" alt="Structured everyday carryall bag" loading="lazy" />
+              <span class="product__tag product__tag--popular">Bestseller</span>
+            </a>
+            <div class="product__details"><div><h3>The Daily Carryall</h3><p>Washed canvas · 3 colors</p></div><span class="product__price">$72</span></div>
+          </article>
+          <article class="product">
+            <a class="product__image" href="#best-sellers" aria-label="View the Sunday Knit">
+              <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=900&q=82" alt="Soft neutral knitwear folded neatly" loading="lazy" />
+              <span class="product__tag product__tag--popular">Bestseller</span>
+            </a>
+            <div class="product__details"><div><h3>The Sunday Knit</h3><p>Oatmeal · XS–XL</p></div><span class="product__price">$124</span></div>
+          </article>
+          <article class="product">
+            <a class="product__image" href="#best-sellers" aria-label="View the Stacking Stoneware Set">
+              <img src="https://images.unsplash.com/photo-1493106641515-6b5631de4bb9?auto=format&fit=crop&w=900&q=82" alt="Simple stoneware dinnerware for the table" loading="lazy" />
+              <span class="product__tag product__tag--popular">Bestseller</span>
+            </a>
+            <div class="product__details"><div><h3>Stacking Stoneware Set</h3><p>Salt glaze · Set of 4</p></div><span class="product__price">$88</span></div>
+          </article>
+          <article class="product">
+            <a class="product__image" href="#best-sellers" aria-label="View the Essential Leather Belt">
+              <img src="https://images.unsplash.com/photo-1624222247344-550fb8d7e5d4?auto=format&fit=crop&w=900&q=82" alt="Classic leather belt with a simple buckle" loading="lazy" />
+              <span class="product__tag product__tag--popular">Bestseller</span>
+            </a>
+            <div class="product__details"><div><h3>Essential Leather Belt</h3><p>Tan leather · S–XL</p></div><span class="product__price">$64</span></div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <site-footer></site-footer>
+  </body>
+</html>
